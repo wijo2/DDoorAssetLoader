@@ -38,5 +38,5 @@ public void tree(GameObject asset, DDoorAssetLoader.LoadableAsset source)
 ```
 
 ## contributing
-The dependencies can be found in the Deps.zip folder in the release.
+The dependencies needed for building can be found in the Deps.zip folder in releases.<br/>
 I'm very much still a beginner dev and I bet the code burns any more experienced dev's eyes so if you want to fix something you are more than welcome to throw a PR at me.
