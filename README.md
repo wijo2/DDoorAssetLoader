@@ -19,7 +19,7 @@ Easy ways to find the scene names and object paths is to look at debug's warp me
 https://github.com/ManlyMarco/RuntimeUnityEditor
 
 Here's an exmple of retrieving objects with the callback:
-'''cs
+```csharp
 private void Awake()
 {
     DDoorAssetLoader.DDoorAssetLoader.AddAsset(new DDoorAssetLoader.LoadableAsset("boss_betty", "Icicle"), snow);
@@ -35,7 +35,7 @@ public void tree(GameObject asset, DDoorAssetLoader.LoadableAsset source)
 {
     treePrefab = asset;
 }
-'''
+```
 
 ## contributing
 The dependencies can be found in the Deps.zip folder in the release.
