@@ -13,7 +13,7 @@ First you need to add the mod dll as a reference for your project. (you shouldn'
 
 The mod is used by calling AddAsset in your mod's Awake method and then giving it the asset(s) you want to load, and either also give a callback to retrieve those assets or find your asset in the public loadedAssets dictionary later. The callback is called immediately after finding the object so if you want to do something else in the scene or modify the asset within it you are free to do so.
 
-Upon collecting the assets are set to inactive, their parent is set to null and they are given a tiny "StayAliveForever" component that makes them impervious to scene transitions. Since the mod only collects each asset once and all scripts that call for that same asset are given the same reference, it is recommended that you don't modify the asset directly, but instead Instantiate it first. If an asset are is unable to be found it will be put into the public failedAssets list.
+Upon collecting the assets are set to inactive, their parent is set to null and they are given a tiny "StayAliveForever" component that makes them impervious to scene transitions. Since the mod only collects each asset once and all scripts that call for that same asset are given the same reference, it is recommended that you don't modify the asset directly, but instead Instantiate it first. If an asset is unable to be found it will be put into the public failedAssets list.
 
 Easy ways to find the scene names and object paths is to look at debug's warp menu (linked in installation) and RuntimeUnityEditor's inspect feature (likned below, it directly gives you a copyable path when inspecting something) respectively.
 https://github.com/ManlyMarco/RuntimeUnityEditor
